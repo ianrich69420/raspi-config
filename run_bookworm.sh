@@ -27,3 +27,8 @@ sudo apt-get install qtwebengine5-dev
 sudo apt-get install pigpio
 sudo apt-get upgrade -y
 yes |sudo cp qt5ct.conf /etc/xdg/qt5ct/qt5ct.conf
+wget https://github.com/joan2937/pigpio/archive/master.zip
+unzip master.zip
+cd pigpio-master
+make
+sudo make install
